@@ -271,7 +271,7 @@ def write_solution_to_file(solution_file_path: str,
             '# Objective value: ' + str(np.round(objective_value, 3)) + '\n\n')
         f.write(tabulate(vs, headers="firstrow"))
         f.close()
-        print(f'Saved solution to '
+        print('Saved solution to '
               f'{os.path.join(os.getcwd(), solution_file_path)}')
 
 
@@ -293,7 +293,7 @@ def write_input_data(data: dict, input_filename: Optional[str] = None) -> str:
                  for i in range(len(data['case_ids']))]
 
     input_string = f'# Max num of bins : {data["num_bins"]} \n'
-    input_string += (f'# Bin dimensions '
+    input_string += ('# Bin dimensions '
                      f'(L * W * H): {data["bin_dimensions"][0]} '
                      f'{data["bin_dimensions"][1]} '
                      f'{data["bin_dimensions"][2]} \n \n')

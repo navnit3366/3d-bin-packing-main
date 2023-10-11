@@ -184,7 +184,7 @@ class TestPacking3d(unittest.TestCase):
             # # check boundary when items are assigned to bins 1 and 2
             sample = original_sample.copy()
             sample[f'{v}_0'] = 35
-            sample[f'x_0'] = 35
+            sample['x_0'] = 35
             sample['case_0_in_bin_1'] = 1
             sample['case_1_in_bin_0'] = 1
             sample['upper_bound_1'] = 37
@@ -194,7 +194,7 @@ class TestPacking3d(unittest.TestCase):
             # check infeasible configuration
             sample = original_sample.copy()
             sample[f'{v}_0'] = 35
-            sample[f'z_0'] = 35
+            sample['z_0'] = 35
             sample['case_0_in_bin_0'] = 1
             sample['case_1_in_bin_0'] = 1
             sample['upper_bound_1'] = 30
